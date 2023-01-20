@@ -8,7 +8,8 @@ public class MobileApiTest {
     void shouldReturnDemoAccounts() {
         given()
                 .baseUri("https://postman-echo.com")
-                .body("Hello, World!")
+                .contentType("text/plain; charset=UTF-8")
+                .body("Привет,Мир!")
                 .when()
                 .post("/post")
                 .then()
